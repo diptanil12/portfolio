@@ -1,0 +1,294 @@
+/* blue */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #121212; /* Dark background remains unchanged */
+  color: #b3ecf3; /* Light yellow text for better visibility */
+  font-family:"Helvetica"; /* Font remains untouched */
+  font-size: 17px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1c1c1c;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-family: "Copperplate";
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00f7ff; /* Bright yellow for the logo */
+  font-family: "copperplate";
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+.nav-links a {
+  color: #00e3d8; /* Golden yellow for links */
+  font-family: "Copperplate";
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f9fafa; /* Softer yellow hover effect */
+}
+
+/* Main Content */
+main {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+/* Home Section */
+.home {
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: #1a1a1a;
+  color: #b3f2f3; /* Light yellow text */
+}
+
+.home h1 {
+  font-family: "Helvetica";
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00e1ff; /* Bright yellow for headings */
+}
+
+.home p {
+  font-size: 1.25rem;
+  font-family: "Courier New";
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  color: #7bfffd; /* Softer yellow for paragraphs */
+}
+
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-family:"Copperplate";
+  background-color: #00c8e3; /* Golden yellow button background */
+  color: #121212; /* Dark text on button */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f6f8f8; /* Bright yellow hover effect */
+  transform: translateY(-3px);
+}
+
+/* About Section */
+.about {
+  padding: 6rem 2rem;
+  text-align: center;
+  background-color: #181818;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  font-family:"Helvetica";
+  margin-bottom: 1.5rem;
+  color: #00eeff; /* Bright yellow headings */
+}
+
+.about p {
+  font-family: "Courier New";
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #7bfffb; /* Softer yellow */
+}
+
+/* Skills Section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+.skills-list li {
+  padding: 1rem 1.5rem;
+  font-family: "Copperplate";
+  font-size: 1rem;
+  background-color: #00e3e3; /* Golden yellow skill card */
+  color: #121212; /* Dark text */
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+  background-color: #fafcfc; /* Golden yellow skill card */
+  box-shadow: 0 4px 10px rgba(255, 255, 0, 0.1); /* Subtle yellow shadow */
+}
+
+/* Projects Section */
+.projects {
+  padding: 6rem 2rem;
+  background-color: #181818;
+  text-align: center;
+  color: #b3f2f3; /* Light yellow text */
+}
+
+.projects h1 {
+  font-size: 2.5rem;
+  font-family:"Helvetica";
+  margin-bottom: 1.5rem;
+  color: #00eeff; /* Bright yellow headings */
+}
+
+.projects p {
+  font-family: "Courier New";
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 800px;
+  color: #7be7ff; /* Softer yellow for paragraphs */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-card {
+  background-color: #2e2e2e; /* Dark gray for cards */
+  color: #b3edf3; /* Light yellow text */
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(255, 255, 0, 0.1); /* Subtle yellow shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px #b3edf3;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #00f2ff; /* Bright yellow for titles */
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #7bfffd; /* Softer yellow for descriptions */
+}
+
+.project-card a {
+  color: #00e3d8; /* Golden yellow for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #00ffee; /* Bright yellow hover effect */
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+  padding: 6rem 2rem;
+  background-color: #181818;
+  text-align: center;
+  color: #b3eff3;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  font-family:"Helvetica";
+  margin-bottom: 1.5rem;
+  color: #00f7ff; /* Bright yellow headings */
+}
+
+.contact p {
+  font-family: "Courier New";
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #7bf6ff; /* Softer yellow for paragraphs */
+}
+
+.contact a {
+  color: #00d0e3; /* Golden yellow for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  color: #00f2ff; /* Bright yellow hover effect */
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  padding: 1.5rem;
+  background-color: #1c1c1c;
+  text-align: center;
+  color: #b3f1f3; /* Light yellow text */
+}
+
+.footer p {
+  margin: 0;
+  font-family:"Helvetica";
+  font-size: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+      font-family: "Copperplate";
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  h1 {
+      font-family: "Helvetica";
+      font-size: 2.5rem;
+  }
+
+  p {
+      font-family: "Courier New";
+      font-size: 1.1rem;
+  }
+
+  .skills-list {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .project-grid {
+      grid-template-columns: 1fr;
+  }
+}
